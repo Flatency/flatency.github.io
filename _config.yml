@@ -119,10 +119,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: Flatency/flatency.github.io # <gh-username>/<repo>
-    repo_id: R_kgDONDgfR
-    category: Announcements
-    category_id: DIC_kwDONDgfRs4CjkCl
+    repo: 'Flatency/flatency.github.io' # <gh-username>/<repo>
+    repo_id: "R_kgDONDgfR"
+    category: "Announcements"
+    category_id: "DIC_kwDONDgfRs4CjkCl"
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
