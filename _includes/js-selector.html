@@ -71,6 +71,22 @@
   <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
 {% endif %}
 
+<!-- MathJax: 放在 body 底部 -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [['$','$'], ["\\(","\\)"]],
+          displayMath: [['$$','$$'], ["\\[","\\]"]],
+          processEscapes: true,
+          "HTML-CSS": { fonts: ["TeX"] }
+        }
+      });
+    </script>
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 <!-- Pageviews -->
 {% if page.layout == 'post' %}
   {% assign provider = site.pageviews.provider %}
